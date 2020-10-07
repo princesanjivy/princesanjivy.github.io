@@ -1,5 +1,5 @@
 [{
   "relation": ["delegate_permission/common.handle_all_urls"],
-  "target" : { "namespace": "android_app", "package_name": "com.princeappstudio.msfonts",
+  "target" : { "namespace": "android_app", "package_name": "com.princewebstudio.msfonts",
                "sha256_cert_fingerprints": ["D4:6A:FC:29:16:9C:47:2C:7F:FB:BF:E6:2A:29:6E:E5:21:61:86:B4:1C:31:FF:B1:68:ED:80:C5:49:1D:FA:68"] }
 }]
