@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <div
+      class="cf-turnstile"
+      data-sitekey="0x4AAAAAABXnC3rrVKvNok91"
+      data-callback="onSuccess"
+      data-theme="light"
+    ></div>
+    <script>
+      function onSuccess(token) {
+        if (window.flutter_inappwebview) {
+          window.flutter_inappwebview.callHandler("captchaHandler", token);
+        }
+      }
+    </script>
+  </body>
+</html>
