@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movie Style Fonts - Support</title>
+  <meta name="description" content="Support page for Movie Style Fonts app. Get help, suggest new fonts, and find our other apps." />
+  <link rel="icon" type="image/x-icon" href="msf-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card: #141a24;
+      --text: #e6ebf2;
+      --muted: #9fb0c2;
+      --brand: #5b8cff;
+      --brand-2: #8a5bff;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.25);
+      --maxw: 980px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(91,140,255,0.15), transparent),
+                  radial-gradient(1200px 600px at 80% 10%, rgba(138,91,255,0.15), transparent),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 24px; }
+
+    header.hero {
+      display: grid; gap: 16px;
+      padding: 48px 24px; border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(91,140,255,0.15), rgba(138,91,255,0.15));
+      backdrop-filter: blur(2px);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: var(--shadow);
+    }
+    .eyebrow { color: var(--muted); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 12px; }
+    h1 { margin: 0; font-size: clamp(28px, 5vw, 44px); line-height: 1.1; }
+    p.lead { margin: 0; font-size: clamp(15px, 2.3vw, 18px); color: var(--muted); }
+
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 12px 16px; border-radius: 999px; font-weight: 600; border: 1px solid rgba(255,255,255,0.1);
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+      color: var(--text); text-decoration: none; box-shadow: var(--shadow);
+    }
+    .btn.primary { background: linear-gradient(180deg, var(--brand), var(--brand-2)); border: none; }
+
+    section { margin: 40px 0; }
+
+    .card {
+      background: var(--card); border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow);
+    }
+
+    .grid { display: grid; gap: 16px; }
+    .grid.cols-2 { grid-template-columns: repeat(1, 1fr); }
+    @media (min-width: 800px) { .grid.cols-2 { grid-template-columns: 1fr 1fr; } }
+
+    h2 { margin: 0 0 8px; font-size: 22px; }
+
+    ul.clean { list-style: none; padding: 0; margin: 0; }
+    ul.clean li { padding-left: 0; }
+    .muted { color: var(--muted); }
+
+    .steps { counter-reset: step; display: grid; gap: 12px; }
+    .step {
+      display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start;
+      background: rgba(255,255,255,0.03); border: 1px dashed rgba(255,255,255,0.08);
+      border-radius: 12px; padding: 14px;
+    }
+    .badge { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%;
+      background: linear-gradient(180deg, var(--brand), var(--brand-2)); font-weight: 800; }
+
+    footer { margin-top: 56px; padding: 24px 0; color: var(--muted); font-size: 14px; border-top: 1px solid rgba(255,255,255,0.06); }
+    .links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .pill { padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); }
+
+    .notice { display:flex; align-items: center; gap: 12px; padding: 14px; border-left: 4px solid var(--warn);
+      background: linear-gradient(180deg, rgba(245,158,11,0.08), rgba(245,158,11,0.04)); border-radius: 12px; }
+
+    .apps-grid { display: grid; gap: 12px; grid-template-columns: repeat(1,1fr); }
+    @media (min-width: 640px){ .apps-grid { grid-template-columns: repeat(2,1fr);} }
+    @media (min-width: 960px){ .apps-grid { grid-template-columns: repeat(3,1fr);} }
+
+    .app-card { padding: 16px; border-radius: 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); }
+    .app-card h3 { margin: 0 0 6px; font-size: 18px; }
+    .app-card p { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero" role="banner">
+      <span class="eyebrow">Support</span>
+      <h1><em>Movie Style Fonts</em></h1>
+      <p class="lead">Get your text rendered in your favorite movie style fonts. Find quick tips, contact us with new font ideas, and discover more of our apps.</p>
+      <div class="cta-row" role="navigation" aria-label="Primary">
+        <a class="btn primary" href="#howto">How to Save an Image</a>
+        <a class="btn" href="#contact">Suggest a Movie Font</a>
+        <a class="btn" href="#github">Contribute on GitHub</a>
+      </div>
+    </header>
+
+    <section id="about" class="grid cols-2" aria-labelledby="about-title">
+      <div class="card">
+        <h2 id="about-title">What this app does</h2>
+        <p>Type any text and we'll style it to match iconic movie aesthetics. Perfect for social posts, banners, or just for fun.</p>
+        <ul class="clean muted">
+          <li>• Dozens of movie inspired fonts</li>
+          <li>• High resolution image export</li>
+          <li>• Easy download and sharing</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Heads up about locked fonts</h2>
+        <div class="notice" role="note" aria-label="Locked fonts notice">
+          <span>🔒</span>
+          <p class="muted" style="margin:0">Some fonts may be locked. Watch a short ad to unlock them. Only minimal ads; just enough to support our work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="howto" class="card" aria-labelledby="howto-title">
+      <h2 id="howto-title">How to create & save your image</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="badge">1</span>
+          <div>
+            <strong>Enter your text</strong>
+            <div class="muted">Open the app and type the text you want styled.</div>
+          </div>
+        </div>
+        <div class="step">
+          <span class="badge">2</span>
+          <div>
+            <strong>Pick a Movie Style Font</strong>
+            <div class="muted">Browse the gallery and preview instantly.</div>
+          </div>
+        </div>
+        <div class="step">
+          <span class="badge">3</span>
+          <div>
+            <strong>Tap <em>Save Image</em></strong>
+            <div class="muted">We'll render your text and save the image to your device.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Suggest a new movie font</h2>
+      <p class="muted">Have a favorite movie we haven't covered yet? We'd love to add it.</p>
+      <ul class="clean">
+        <li>📬 Email: <a href="mailto:sanjivy@princeappstudio.in">sanjivy@princeappstudio.in</a></li>
+        <li>🧾 Include: movie title, a sample image</li>
+      </ul>
+    </section>
+
+    <section id="github" class="card" aria-labelledby="github-title">
+      <h2 id="github-title">Extend this project on GitHub - Yeah! it's open sourced and built with Flutter</h2>
+      <p class="muted">We welcome contributions: new fonts, optimizations, accessibility tweaks, and translations.</p>
+      <p>
+        👉 <a href="https://github.com/princesanjivy/moviestylefonts" target="_blank" rel="noopener">github.com/princesanjivy/moviestylefonts</a>
+      </p>
+      <details>
+        <summary><strong>Contribution tips</strong></summary>
+        <ul>
+          <li>Open an issue describing the font or change.</li>
+          <li>Submit a PR with screenshots of the new style/layouts in action.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="more-apps" class="card" aria-labelledby="more-apps-title">
+      <h2 id="more-apps-title">More apps you might like</h2>
+      <div class="apps-grid">
+        <article class="app-card">
+          <h3><a href="https://apps.apple.com/us/app/micro-run-python-on-web/id6497794506?platform=iphone" target="_blank">Micro - run python on web</a></h3>
+          <p>Easily deploy python projects.</p>
+          <div class="links">
+            <span class="pill">iOS</span>
+            <span class="pill">Android</span>
+          </div>
+        </article>
+        <article class="app-card">
+          <h3><a href="https://apps.apple.com/us/app/tic-tac-toe-online-2player/id6740833110?platform=iphone" target="_blank">Tic Tac Toe - Online & 2Player</a></h3>
+          <p>The online tic tac toe game</p>
+          <div class="links">
+            <span class="pill">iOS</span>
+            <span class="pill">Android</span>
+          </div>
+        </article>
+        <article class="app-card">
+          <h3><a href="https://play.google.com/store/apps/details?id=com.princegamestudio.fallingdots" target="_blank">Falling Dots</a></h3>
+          <p>Can you survive in the Falling Dots and bag the highest score?</p>
+          <div class="links">
+            <!-- <span class="pill">iOS</span> -->
+            <span class="pill">Android</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div class="grid cols-2">
+        <div>
+          <strong>Movie Style Fonts</strong>
+          <div class="muted">© <span>2017 - </span><span id="y"></span> princeappstudio. All rights reserved. </div>
+        </div>
+        <!-- <div class="links" style="justify-content:flex-end">
+          <a href="#contact">Contact</a>
+          <a href="#github">GitHub</a>
+        </div> -->
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Replace the year dynamically and support smooth scroll on hash links
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
